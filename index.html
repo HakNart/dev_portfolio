@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Kha Tran - Portfolio Website </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+    <!-- Overlay section to prevent multiclicks -->
+    <div class="overlay"></div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#home" class="nav-item link-item">home</a></li>
+                <li><a href="#about" class="nav-item link-item">about</a></li>
+                <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                <li><a href="#contact" class="nav-item link-item">contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section class="home-section align-items-center active" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <p>Hello, I'm</p>
+            <h1>Kha Tran</h1>
+            <h2>Software Developer</h2>
+            <a href="#about" class="btn link-item">more about me</a>
+            <a href="#portfolio" class="btn link-item">Portfolio</a>
+          </div>
+          <div class="home-img">
+            <figure class="img-box">
+              <img src="img/monogramframes_tdk.svg" alt="profile image">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ABOUT SECTION -->
+    <section class="about-section sec-padding " id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>about me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="about-img">
+            <figure class="img-box">
+              <img src="img/about-img.png" alt="about image">
+            </figure>
+          </div> -->
+          <div class="about-text">
+            <p>Hi, My name is Kha Tran. I'm a computer science student, and my passion lies in the intersection of technology and innovation. I'm always eager to learn and grow in my field, and I thrive on the challenge of solving complex problems through coding. My skill set includes programming languages such as Java, Python, C++, and JavaScript, and I'm familiar with various frameworks, tools, and concepts such as Git, RESTful APIs, databases, and machine learning.</p>
+            <h3>skills</h3>
+            <div class="skills">
+              <div class="skill-item">java</div>
+              <div class="skill-item">spring</div>
+              <div class="skill-item">python</div>
+              <div class="skill-item">c++</div>
+              <div class="skill-item">c</div>
+              <div class="skill-item">javascript</div>
+              <div class="skill-item">CI/CD</div>
+              <div class="skill-item">Nginx</div>
+              <div class="skill-item">html</div>
+              <div class="skill-item">css</div>
+            </div>
+
+            <div class="about-tabs">
+              <button class="tab-item active" data-target="#education">Education</button>
+              <button class="tab-item" data-target="#experience">Experience</button>
+            </div>
+
+            <!-- Education -->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2022-2023</span>
+                  <h4>master of science - <span>university of north carolina at charlotte</span></h4>
+                  <p><strong>Major</strong>: Computer Science</p>
+                  <p><strong>GPA: </strong> 3.8</p>
+                  <p><strong>Courseworks</strong>: Machine Learning, Algorithm and Data Structures, Database Systems, Parallel Computing,
+                  Computer Networks and Communication, Network Based Application Development, Intelligent Systems,
+                  Mobile Application Development, Illustrative Visualization, Mining Massive Datasets</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2013-2027</span>
+                  <h4>bachelor of science - <span>appalachian university</span></h4>
+                  <p><strong>Major</strong>: Chemistry</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2020-Current</span>
+                  <h4>technology manager - <span>lexi nail</span></h4>
+                  <p>Designed, developed, and implemented sale and personnel management systems</p>
+                  <p>Planned, organized, and monitored electronic data operations</p>
+                  <p>Ensured the shop's computer hardware, software, and database management systems, internet server, and
+                    telecommunication services are working properly.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2019-Current</span>
+                  <h4>specimen tech - <span>LabCorp, Charlotte, NC</span></h4>
+                  <p>Managed patient details on SIS system, ensuring accurate registration and accessioning.</p>
+                  <p>Processed and routed specimens to staging areas, maintaining proper protocols.</p>
+                  <p>Packed and shipped specimens to designated lab sites, ensuring efficient delivery.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#portfolio" class="btn link-item">to portfolio</a>
+            <a href="#contact" class="btn link-item">contact me</a>
+            <a href="resume.pdf" class="btn link-item" target="_blank">download resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORFOLIO SECTION -->
+    <section class="portfolio-section sec-padding " id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>recent work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-item">
+            <figure class="portfolio-item-thumbnail">
+              <img src="./img/portfolio/kitchenstore_screenshot.jpg" alt="portfolio item thumbnail">
+            </figure>
+            <h3 class="portfolio-item-title">Kitchen Equipment Ecommerce</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>A demo full-stack web application showcasing an kitchen equipment eccomerce store. The application employed SPA frontend with ReactJs and api backend implemented with Springboot framework. Features include user authentication with tokens (JWT, refresh), CRUD authentication, RESTful API, and more.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>technologies used - <span>Springboot, ReactJs, PostgreSQL, Nginx, JavaScript, Html, Css</span></li>
+                  <li>Role - <span>Developer</span></li>
+                  <li>View Online - <span><a href="https://ecom.demo.knartdev.top/" target="_blank">https://ecom.demo.knartdev.top</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <figure class="portfolio-item-thumbnail">
+              <img src="./img/portfolio/generic_project_img_02.jpg" alt="portfolio item thumbnail">
+            </figure>
+            <h3 class="portfolio-item-title">Sale and Personnel System</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>A web-based application to manage sale records and manage personnel payroll. The application utilizes Angular as SPA frontend, Spring framework as backend api, and PostgreSQL as database service.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>technologies used - <span>Angular, Spring, Java, Javascript, PostgreSQL, Html, Css</span></li>
+                  <li>Role - <span>Developer</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <figure class="portfolio-item-thumbnail">
+              <img src="./img/portfolio/item_trading_screenshot.jpg" alt="portfolio item thumbnail">
+            </figure>
+            <h3 class="portfolio-item-title">items trading website</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>A web application demonstrates a dynamic item trading web application. The application employed MVC architectural pattern utilizing MEN stack. It features server-side-rendering(SSR) and MongoDB as database. It also implements secure user authentication system, and rigorously enforces server-side input validation and data sanitation.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>technologies used - <span>Express, MongoDB, Nodejs, Html, Css</span></li>
+                  <li>Role - <span>Developer</span></li>
+                  <li>View - <span><a href="https://github.com/HakNart/item-trading-website" target="_blank">Github</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <figure class="portfolio-item-thumbnail">
+              <img src="./img/portfolio/generic_ml_project_01.jpg" alt="portfolio item thumbnail">
+            </figure>
+            <h3 class="portfolio-item-title">machine learning for credit risk analysis</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Implemented a neural network model to access credit risk. The model was able to achieve approximately 83.57% confidence with AUC score analysis.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>technologies used - <span>Python, Jupyter Notebook</span></li>
+                  <li>Role - <span>Developer</span></li>
+                  <li>View - <span><a href="https://github.com/HakNart/ml-model-analysis" target="_blank">github</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <figure class="portfolio-item-thumbnail">
+              <img src="./img/portfolio/generic_project_img_01.jpg" alt="portfolio item thumbnail">
+            </figure>
+            <h3 class="portfolio-item-title">Dynamic Workload Partition with MPI</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Solution to numerical integration by adapting workload partition using master-worker pattern in Message Passing Interface (MPI). Implemented concpets of distributed memory system, and experienced with working in a High Performance Computing (HPC) cluster environment</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>technologies used - <span>C, C++</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <figure class="portfolio-item-thumbnail">
+              <img src="./img/portfolio/porfolio_screenshot_01.png" alt="portfolio item thumbnail">
+            </figure>
+            <h3 class="portfolio-item-title">porfolio webpage</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Portfolio web page</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>technologies used - <span>Javascript, Html, Css</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section sec-padding " id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form action="">
+              <div class="row">
+                <div class="input-group">
+                  <input type="text" placeholder="Name" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Email" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Subject" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <textarea placeholder="Message" class="input-control" required></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="btn">send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h3>Email</h3>
+              <p>khadieptran@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Phone</h3>
+              <p>1-336-848-1466</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Social</h3>
+              <div class="social-links">
+                <a href="https://github.com/HakNart" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kha-tran-751a2a126/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Portfolio Popup -->
+  <div class="portfolio-popup">
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button class="btn pp-close"><i class="fas fa-times"></i></button>
+          <figure class="pp-thumbnail">
+            <img src="./img/portfolio/3.jpg" alt="portfolio thumbnail">
+          </figure>
+          <h3></h3>
+        </div>
+        <div class="pp-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+<script src="js/script.js"></script>
+</body>
+</html>
